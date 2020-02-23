@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Ringbearer;
+    src: url(assets/RINGM___.TTF) format("truetype");
+  }
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Ringbearer, "Helvetica Neue", sans-serif;
+    color: #958319; 
+}
+html {    
+    background: url('/assets/background.jpg') no-repeat center fixed;     
+    background-size: cover;
+    font-family: Ringbearer;
+}
+
+button {
+    height: 48px;
+    font-family: Ringbearer;
+    color: 	#958319;
+    outline: #958319;
+    background-color: #000;
+    border-color: #958319;
+}
+
+button:hover {
+    background-color: #2c2c2c;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form input {
+    width: 344px;
+    height: 42px;
+    font-family: Ringbearer;
+    outline: #958319;
+    border: 2px solid #958319;
+    color: #958319;
+    background-color: #2c2c2c;
+    border-right: 0px;
+}
+
+.container form input::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.container form button {
+    height: 48px;
+    font-family: Ringbearer;
+    color: 	#958319;
+    outline: #958319;
+    background-color: #000;
+    border-color: #958319;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-button {
+    display: block;
+    width: 62px;
+}
+
+.dropdown-content .dropdown-button:hover {
+    background-color: #2c2c2c;
+}
+
+.dropdown-content .chapter {
+    font-size: 12px;
+}
+
+.dropdown-content .character {
+    font-size: 9px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+app-go-back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+ul li {
+    background-color: #000;
+    border: 1px solid #958319;
+    padding: 5px;
+    font-size: 34px;
+}
+
+@media (max-width:571px) {
+    ul li {
+        font-size: 18px;
+    }
+}

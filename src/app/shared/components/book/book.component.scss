@@ -1,0 +1,16 @@
+ul{
+    list-style-position: inside;
+}
+
+ul li {
+    background-color: #000;
+    border: 1px solid #958319;
+    padding: 5px;
+    font-size: 34px;
+}
+
+@media (max-width:571px) {
+    ul li {
+        font-size: 18px;
+    }
+}

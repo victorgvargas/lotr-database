@@ -1,0 +1,33 @@
+<div class="container">
+    <img src="/assets/logo.png" alt="Logo">
+    <form [formGroup]="searchInput" (ngSubmit)="onSubmit()">
+    <input 
+        type="text" 
+        id="search"
+        formControlName="search" 
+        placeholder="Search between books, movies, characters and more!"
+    >
+    <div class="dropdown">
+        <button class="drop-btn">Search</button>
+        <div class="dropdown-content">
+            <button type="submit" routerLink="/book" class="dropdown-button">Book</button>
+            <button type="submit" routerLink="/chapter" class="dropdown-button chapter">Chapter</button>
+            <button type="submit" routerLink="/character" class="dropdown-button character">Character</button>
+            <button type="submit" routerLink="/movie" class="dropdown-button">Movie</button>
+            <button type="submit" routerLink="/quote" class="dropdown-button">Quote</button>
+        </div>
+    </div>
+    </form>
+</div>
+<div class="dropdown-list">
+    <div class="dropdown">
+        <button class="drop-btn">View list</button>
+        <div class="dropdown-content">
+            <button type="submit" routerLink="/book" class="dropdown-button">Books</button>
+            <button type="submit" routerLink="/chapter" class="dropdown-button chapter">Chapters</button>
+            <button type="submit" routerLink="/character" class="dropdown-button character">Characters</button>
+            <button type="submit" routerLink="/movie" class="dropdown-button">Movies</button>
+            <button type="submit" routerLink="/quote" class="dropdown-button">Quotes</button>
+        </div>
+    </div>
+</div>

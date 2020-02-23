@@ -1,0 +1,31 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    position: absolute;
+    top: calc(50% - 170px);
+}
+
+@media (max-width : 595px) {
+    .container form input {
+        width: 260px;
+    }
+    .container img {
+        width: 362px;
+        top: calc(50% - 110px);
+    }
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.dropdown-list .dropdown .dropdown-content .dropdown-button{
+    width: 71px;
+}

@@ -1,0 +1,5 @@
+<app-go-back-button></app-go-back-button>
+<app-loader *ngIf="loader"></app-loader>
+<ul>
+    <li *ngFor="let item of response">{{ item.name }}</li>
+</ul>
