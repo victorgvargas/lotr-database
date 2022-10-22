@@ -8,9 +8,9 @@ import { GetDataService } from '../../services/get-data.service';
 })
 export class BookComponent implements OnInit {
   response = [];
-  loader : boolean = false;
+  loader = false;
 
-  constructor(private getData : GetDataService) { }
+  constructor(private getData: GetDataService) { }
 
   ngOnInit() {
     this.loader = true;
@@ -18,7 +18,7 @@ export class BookComponent implements OnInit {
       this.response = res.docs;
       console.log(this.response);
       this.loader = false;
-    })
+    });
   }
 
 }

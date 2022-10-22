@@ -8,16 +8,16 @@ import { GetDataService } from '../../services/get-data.service';
 })
 export class ChapterComponent implements OnInit {
   response = [];
-  loader : boolean = true;
+  loader = true;
 
-  constructor(private getData : GetDataService) { }
+  constructor(private getData: GetDataService) { }
 
   ngOnInit() {
     this.loader = true;
     this.getData.getChapter().subscribe(res => {
       console.log(res);
       this.loader = false;
-    })
+    });
   }
 
 }

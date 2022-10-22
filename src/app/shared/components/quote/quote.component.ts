@@ -8,9 +8,9 @@ import { GetDataService } from '../../services/get-data.service';
 })
 export class QuoteComponent implements OnInit {
   response = [];
-  loader : boolean = false;
+  loader = false;
 
-  constructor(private getData : GetDataService) { }
+  constructor(private getData: GetDataService) { }
 
   ngOnInit() {
     this.loader = true;

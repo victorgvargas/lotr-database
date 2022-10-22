@@ -11,15 +11,15 @@ export class MainComponent implements OnInit {
   constructor() { }
 
 
-  searchInput : FormGroup;
+  searchInput: FormGroup;
 
-  ngOnInit(){
+  ngOnInit() {
     this.searchInput = new FormGroup({
-      'search' : new FormControl(null)
+      search : new FormControl(null)
     });
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log(this.searchInput);
   }
 }
