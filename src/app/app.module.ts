@@ -1,46 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatButtonModule } from '@angular/material/button';
-import { MatMenuModule } from '@angular/material/menu';
-import { HttpClientModule } from '@angular/common/http';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BookComponent } from './shared/components/book/book.component';
-import { MovieComponent } from './shared/components/movie/movie.component';
-import { CharacterComponent } from './shared/components/character/character.component';
-import { QuoteComponent } from './shared/components/quote/quote.component';
-import { ChapterComponent } from './shared/components/chapter/chapter.component';
-import { MainComponent } from './shared/components/main/main.component';
-import { GoBackButtonComponent } from './shared/components/go-back-button/go-back-button.component';
-import { LoaderComponent } from './shared/components/loader/loader.component';
+import { NgModule } from "@angular/core";
+import { AppComponent } from "./app.component";
+import { PagesModule } from "./pages/pages.module";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppRoutingModule } from "./app-routing.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BookComponent,
-    MovieComponent,
-    CharacterComponent,
-    QuoteComponent,
-    ChapterComponent,
-    MainComponent,
-    GoBackButtonComponent,
-    LoaderComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    PagesModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatMenuModule,
-    HttpClientModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
